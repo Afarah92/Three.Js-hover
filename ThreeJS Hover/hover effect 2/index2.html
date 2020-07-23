@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style2.css">
+   
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+
+
+    <title>Hover effect 2</title>
+    <style>
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 700px;
+}
+
+.title {
+  cursor: pointer;
+  color: white;
+  font-family: "Fjalla One";
+  font-size: 6vh;
+  font-weight: 500;
+  flex-shrink: 0;
+  padding: 20px 20px;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+.title.stroke {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  pointer-events: none;
+  z-index: -1;
+  left: -50%;
+  top: -50%;
+}
+    </style>
+</head>
+<body>
+
+
+    <canvas>
+      
+    </canvas>
+    <div class="container">
+      <h2 class="title">Title 1</h2>
+      <h2 class="title">Title 2</h2>
+      <h2 class="title">Title 3</h2>
+    </div><canvas></canvas>
+    <div class="container">
+      <h2 class="title">Title 1</h2>
+      <h2 class="title">Title 2</h2>
+      <h2 class="title">Title 3</h2>
+    </div>
+      
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r118/three.min.js" integrity="sha512-ZoEQdcOJ16M20VnLaQxmZlthvLdTbF9CSAAyvZyzru+Em8NEY+7Xy0jdWdUjdOlo7hbPVmaobVBpUF9aqmXENA==" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js" integrity="sha512-pCPP9sfLW9T7EZiw725jUl+ux032sjGhFE+ZAx00C1iO55ZmZJWpfNGbDf2ZF5b0UqxRqSW548PbZEWmH+S7pA==" crossorigin="anonymous"></script>
+
+      <script src="main2.js"></script>  
+      
+</body>
+</html>
